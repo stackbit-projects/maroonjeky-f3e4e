@@ -1,0 +1,26 @@
+title: Onassis
+author: Author
+email: email@gmail.com
+description: >-
+  This is the description of my site. For all intents and purposes, it's
+  complete.
+baseurl: ''
+google_analytics: UA-131540516-1
+url: ''
+include:
+  - _pages
+collections_dir: _collections
+twitter_username: jekyllrb
+github_username: jekyll
+markdown: kramdown
+plugins:
+  - jekyll-feed
+collections:
+  articles:
+    output: true
+  letters:
+    output: true
+  speeches:
+    output: true
+  tutorials:
+    output: true

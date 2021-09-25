@@ -1,0 +1,145 @@
+stackbitVersion: ~0.3.0
+ssgName: jekyll
+publishDir: _site
+dataDir: _data
+pagesDir: ''
+models:
+  page_1:
+    type: page
+    label: Page 1
+    match:
+      - _collections/_articles/1776-02-14-common-sense.markdown
+      - _collections/_articles/1837-01-01-the-american-scholar.markdown
+      - _collections/_articles/1940-06-04-we-shall-fight-on-the-beaches.markdown
+      - _collections/_articles/1963-06-26-ich-bin-ein-berliner.markdown
+      - _collections/_articles/1968-08-23-I-have-a-dream.markdown
+      - _collections/_letters/2019-10-18-lorem-ipsum.md
+      - _collections/_speeches/2019-10-17-now-its-time-for-all-good-men.md
+      - _collections/_tutorials/2019-10-18-welcome-to-jekyll.markdown
+      - _posts/2019-10-13-welcome-to-jekyll.markdown
+    fields:
+      - type: string
+        name: layout
+        label: Layout
+      - type: string
+        name: title
+        label: Title
+      - type: string
+        name: author
+        label: Author
+      - type: datetime
+        name: date
+        label: Date
+      - type: image
+        name: image
+        label: Image
+      - type: number
+        name: rating
+        label: Rating
+        subtype: int
+      - type: string
+        name: description
+        label: Description
+      - type: string
+        name: categories
+        label: Categories
+  page:
+    type: page
+    label: Page
+    folder: _pages
+    match: '*'
+    fields:
+      - type: string
+        name: layout
+        label: Layout
+      - type: string
+        name: title
+        label: Title
+      - type: string
+        name: permalink
+        label: Permalink
+  navbar:
+    type: data
+    label: Navbar
+    file: navbar.yml
+    isList: true
+    items:
+      type: model
+      models:
+        - object_7q06nzpx8y
+        - object_5uy2k2voe9
+        - object_nrhyzxoyya
+        - object_a1q4b6tmw8
+        - object_uhtsgwxnyr
+        - object_zclwi615d0
+        - object_k48aagkbxd
+  object_7q06nzpx8y:
+    type: object
+    label: Object 1
+    fields:
+      - type: string
+        name: label
+        label: Label
+      - type: string
+        name: url
+        label: Url
+  object_5uy2k2voe9:
+    type: object
+    label: Object 2
+    fields:
+      - type: string
+        name: label
+        label: Label
+      - type: string
+        name: url
+        label: Url
+  object_nrhyzxoyya:
+    type: object
+    label: Object 3
+    fields:
+      - type: string
+        name: label
+        label: Label
+      - type: string
+        name: url
+        label: Url
+  object_a1q4b6tmw8:
+    type: object
+    label: Object 4
+    fields:
+      - type: string
+        name: label
+        label: Label
+      - type: string
+        name: url
+        label: Url
+  object_uhtsgwxnyr:
+    type: object
+    label: Object 5
+    fields:
+      - type: string
+        name: label
+        label: Label
+      - type: string
+        name: url
+        label: Url
+  object_zclwi615d0:
+    type: object
+    label: Object 6
+    fields:
+      - type: string
+        name: label
+        label: Label
+      - type: string
+        name: url
+        label: Url
+  object_k48aagkbxd:
+    type: object
+    label: Object 7
+    fields:
+      - type: string
+        name: label
+        label: Label
+      - type: string
+        name: url
+        label: Url
